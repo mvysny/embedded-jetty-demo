@@ -22,5 +22,8 @@ $ curl localhost:8080/rest/hello
 Hello World
 ```
 
-Alternatively, simply run the `com.example.Application` class in your IDE.
+## Running From Your IDE
+
+Simply run the `com.example.Application` class in your IDE - it contains the
+`main()` method which starts up Jetty, Vaadin and Spark.
 
