@@ -24,7 +24,7 @@ public class Application {
         WebAppContext context = new WebAppContext();
         context.setBaseResource(Resource.newResource(webRootUri));
         context.setContextPath(contextPath);
-        context.setAttribute("org.eclipse.jetty.server.webapp.ContainerIncludeJarPattern", ".*");
+        context.setAttribute("org.eclipse.jetty.server.webapp.ContainerIncludeJarPattern", ".*.jar|.*/classes/.*");
         context.setConfigurationDiscovered(true);
         context.setConfigurations(new Configuration[]{
                 new AnnotationConfiguration(),
